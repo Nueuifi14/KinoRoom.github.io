@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КиноРум</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>КиноРум</h1>
+        <nav>
+            <a href="#movies">Фильмы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button id="themeBtn">🌙</button>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Лучшие фильмы всех времён</h2>
+            <p>Подборка популярных фильмов и сериалов</p>
+            <a href="#movies">
+                <button>Смотреть Бесплатно</button>
+            </a>
+        </section>
+        <section id="movies" class="movies">
+            <h2>Популярные фильмы последних лет</h2>
+            <div class="movies-container" id="moviesContainer">
+                <div class="movie-card oppenheimer">
+                    <h3>Оппенгеймер</h3>
+                    <p>Историческая драма, триллер</p>
+                </div>
+                <div class="movie-card dune">
+                    <h3>Дюна: Часть вторая</h3>
+                    <p>Фантастика, приключения</p>
+                </div>
+                <div class="movie-card hail-mary">
+                    <h3>Проект «Конец света»</h3>
+                    <p>Фантастика, драма</p>
+                </div>
+            </div>
+            <button id="loadMore">Показать ещё</button>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Обратная связь</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea placeholder="Сообщение"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2026 «КиноРум»</p>
+        <div class="contacts">
+            <a href="#">
+                <img src="icons/social_telegram.svg" alt="Telegram">
+            </a>
+            <span>+8 888 888-88-88</span>
+            <a href="#">
+                <img src="icons/social_vkontakte.svg" alt="VK">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
